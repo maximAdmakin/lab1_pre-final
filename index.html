@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <title>lab1</title>
     <style>
+        #table2 {
+            width: 100%;
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .checkbox{
+
+        }
         #hatOfProject{
             text-align: center;
             font-weight: bold;
@@ -36,22 +45,77 @@
     </table>
 </header>
 
-<table>
+<table style="width: 100%">
     <tr>
-        <td>
+        <td style="width: 25%" id="image">
             <img src="src/pic.jpg" alt="Изображение допустимой области">
             <p>Изображение допустимой области<p>
         </td>
 
-        <td>
-            <input id="checkbox1" name="checkboxx" type="checkbox" value="-3"/><label for="checkbox1">-3</label>
+
+        <td style="width: 25%">
+            <form name="form" method="post" action="post.php">
+                <h2 style="text-align: center">Выберите X:</h2>
+                <div class="checkbox">
+                    <input id="checkbox1" name="checkbox" type="checkbox" value="-5"/><label for="checkbox1">-5</label>
+                    <input id="checkbox2" name="checkbox" type="checkbox" value="-4"/><label for="checkbox2">-4</label>
+                    <input id="checkbox3" name="checkbox" type="checkbox" value="-3"/><label for="checkbox3">-3</label>
+                    <input id="checkbox4" name="checkbox" type="checkbox" value="-2"/><label for="checkbox4">-2</label>
+                    <input id="checkbox5" name="checkbox" type="checkbox" value="-1"/><label for="checkbox5">-1</label>
+                    <input id="checkbox6" name="checkbox" type="checkbox" value="0"/><label for="checkbox6">0</label>
+                    <input id="checkbox7" name="checkbox" type="checkbox" value="1"/><label for="checkbox7">1</label>
+                    <input id="checkbox8" name="checkbox" type="checkbox" value="2"/><label for="checkbox8">2</label>
+                    <input id="checkbox9" name="checkbox" type="checkbox" value="3"/><label for="checkbox9">3</label>
+                </div>
+
+                <br>
+
+                <h2 style="text-align: center">
+                    Введите Y в диапозоне (-5; 5)
+                </h2>
+
+                <br>
+
+                    <input name="textY" id="textY" type="text" maxlength="2"/>
+
+                <br>
+
+                <h2 style="text-align: center">
+                    Выберите R:
+                </h2>
+
+                <div class="button">
+                    <label for="r1"></label><input id="r1" name="rbutton" type="button" value="1" />
+                    <label for="r2"></label><input id="r2" name="rbutton" type="button" value="2" />
+                    <label for="r3"></label><input id="r3" name="rbutton" type="button" value="3" />
+                    <label for="r4"></label><input id="r4" name="rbutton" type="button" value="4" />
+                    <label for="r5"></label><input id="r5" name="rbutton" type="button" value="5" />
+                </div>
+
+
+            </form>
         </td>
 
-        <td>
+        <td style="width: 50%">
+
+            <table id="table2">
+                <tr>
+
+                    <td>Координата Х</td>
+                    <td>Координата Y</td>
+                    <td>Радиус R</td>
+                    <td>Попадание</td>
+                    <td>Текущее время</td>
+                    <td>Время исполнения</td>
+
+                </tr>
+            </table>
 
         </td>
+
     </tr>
 </table>
+
 
 
 </body>

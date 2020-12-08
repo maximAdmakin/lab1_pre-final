@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87500f65-af55-4648-828d-9133d875741b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lab1_pre-final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab1_pre-final.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post.php" beforeDir="false" afterPath="$PROJECT_DIR$/post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +37,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1keNiuvxev2KqItxn51iHucBJOc" />
   <component name="ProjectViewState">
@@ -51,7 +60,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jquery.js" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -63,7 +73,18 @@
       <option name="presentableId" value="Default" />
       <updated>1606057228895</updated>
       <workItem from="1606057231280" duration="8645000" />
-      <workItem from="1606112860170" duration="7842000" />
+      <workItem from="1606112860170" duration="20696000" />
+      <workItem from="1606382408772" duration="6000" />
+      <workItem from="1606591410900" duration="12000" />
+      <workItem from="1606665511708" duration="2788000" />
+      <workItem from="1606773722138" duration="4000" />
+      <workItem from="1607020976802" duration="1200000" />
+      <workItem from="1607063677965" duration="4815000" />
+      <workItem from="1607174571162" duration="31134000" />
+      <workItem from="1607358900008" duration="15832000" />
+      <workItem from="1607383762476" duration="651000" />
+      <workItem from="1607384522730" duration="113000" />
+      <workItem from="1607405897625" duration="12790000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1606076366339</created>
@@ -72,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606076366340</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add">
+      <created>1606139696780</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606139696780</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,13 +123,29 @@
     <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1607355449884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607355449884" />
     <state x="1274" y="447" key="NewPhpFileDialog" timestamp="1606077751783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1274" y="447" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606077751783" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1606076372524">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1607355453193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606076372524" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607355453193" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1606139703584">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606139703584" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1606154229543">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606154229543" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607356452118">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607356452118" />
   </component>
 </project>

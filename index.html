@@ -1,29 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru_RU">
+
+
 <head>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="script.js"></script>
     <title>lab1</title>
     <style>
-        #table2 {
-            width: 100%;
+        /*селектор псевдоэлемента*/
+        H2.inputPhrase::before {
+            text-align: center;
+            content: "В";
+        }
+
+        form h2 {
+            color: fuchsia;
+        }
+
+        form h2 {
+            color: blue;
+        }
+
+        .leftTB {
+            width: 25%;
+            border-radius: 40px;
             vertical-align: top;
+        }
+
+        .downTB {
+            margin-top: -20px;
+            border-radius: 40px;
+            vertical-align: top;
+            background-color: antiquewhite;
+        }
+
+
+        /*селектор идентификатора*/
+        #submit {
+            background-color: antiquewhite;
+            border-radius: 20px;
+        }
+
+        /*селектор псевдокласса*/
+        INPUT#submit:hover {
+            transform: scale(2);
+            background-color: antiquewhite;
+            border-radius: 40px;
+        }
+
+        TD {
             text-align: center;
         }
 
-        .checkbox{
-
-        }
-        #hatOfProject{
+        /*пример наследования*/
+        #hatOfProject {
             text-align: center;
             font-weight: bold;
             font-family: monospace;
             font-size: 10pt;
             background-color: antiquewhite;
-            border-style: double;
             border-radius: 20px;
+            margin-bottom: 15px;
 
         }
-        #mainTable {width: 100%}
+
+
+        #mainTable {
+            width: 100%;
+            height: 25%
+        }
+
     </style>
 </head>
 
@@ -45,69 +92,67 @@
     </table>
 </header>
 
-<table style="width: 100%">
+<table style="width: 100%;">
+
     <tr>
-        <td style="width: 25%" id="image">
-            <img src="src/pic.jpg" alt="Изображение допустимой области">
-            <p>Изображение допустимой области<p>
+
+        <td class="leftTB">
+            <div class="downTB">
+                <p style="text-align: center"><img src="src/pic.jpg" alt="Area"></p>
+                <p style="text-align: center">Изображение допустимой области</p>
+                <div id="error"><b>Здесь будут ошибки:)</b></div>
+            </div>
+
         </td>
 
 
-        <td style="width: 25%">
-            <form name="form" method="post" action="post.php">
-                <h2 style="text-align: center">Выберите X:</h2>
-                <div class="checkbox">
-                    <input id="checkbox1" name="checkbox" type="checkbox" value="-5"/><label for="checkbox1">-5</label>
-                    <input id="checkbox2" name="checkbox" type="checkbox" value="-4"/><label for="checkbox2">-4</label>
-                    <input id="checkbox3" name="checkbox" type="checkbox" value="-3"/><label for="checkbox3">-3</label>
-                    <input id="checkbox4" name="checkbox" type="checkbox" value="-2"/><label for="checkbox4">-2</label>
-                    <input id="checkbox5" name="checkbox" type="checkbox" value="-1"/><label for="checkbox5">-1</label>
-                    <input id="checkbox6" name="checkbox" type="checkbox" value="0"/><label for="checkbox6">0</label>
-                    <input id="checkbox7" name="checkbox" type="checkbox" value="1"/><label for="checkbox7">1</label>
-                    <input id="checkbox8" name="checkbox" type="checkbox" value="2"/><label for="checkbox8">2</label>
-                    <input id="checkbox9" name="checkbox" type="checkbox" value="3"/><label for="checkbox9">3</label>
-                </div>
+        <td class="leftTB">
+            <div class="downTB">
+                <form id="coordinate_form" name="form" method="POST">
+                    <h2 class="inputPhrase">ведите X в диапозоне (-5; 3)</h2>
 
-                <br>
+                    <div style="text-align: center">
+                        <input name="textY" id="value_x" type="text" maxlength="7"/>
+                    </div>
 
-                <h2 style="text-align: center">
-                    Введите Y в диапозоне (-5; 5)
-                </h2>
+                    <h2 class="inputPhrase">ведите Y в диапозоне (-5; 5)</h2>
 
-                <br>
+                    <div style="text-align: center">
+                        <input name="textY" id="value_y" type="text" maxlength="7"/>
+                    </div>
 
-                    <input name="textY" id="textY" type="text" maxlength="2"/>
+                    <h2 style="text-align: center">
+                        Выберите R:
+                    </h2>
 
-                <br>
-
-                <h2 style="text-align: center">
-                    Выберите R:
-                </h2>
-
-                <div class="button">
-                    <label for="r1"></label><input id="r1" name="rbutton" type="button" value="1" />
-                    <label for="r2"></label><input id="r2" name="rbutton" type="button" value="2" />
-                    <label for="r3"></label><input id="r3" name="rbutton" type="button" value="3" />
-                    <label for="r4"></label><input id="r4" name="rbutton" type="button" value="4" />
-                    <label for="r5"></label><input id="r5" name="rbutton" type="button" value="5" />
-                </div>
+                    <div style="margin-bottom:15px; text-align: center">
+                        <input id="r1" class="checkbox" name="r" type="radio" value="1" checked/><label
+                            for="r1"></label>
+                        <input id="r2" class="checkbox" name="r" type="radio" value="2"/><label for="r2"></label>
+                        <input id="r3" class="checkbox" name="r" type="radio" value="3"/><label for="r3"></label>
+                        <input id="r4" class="checkbox" name="r" type="radio" value="4"/><label for="r4"></label>
+                        <input id="r5" class="checkbox" name="r" type="radio" value="5"/><label for="r5"></label>
+                    </div>
 
 
-            </form>
+                    <span class="selectBlock">
+                    <input class="textButton" id="submit" type="button" name="submit" value="Утвердить">
+                </span>
+                </form>
+            </div>
         </td>
 
-        <td style="width: 50%">
+        <td style="width: 50%; vertical-align: top">
 
-            <table id="table2">
+            <table id="result" border="1" class="resultForm" style="background-color: antiquewhite;">
                 <tr>
-
-                    <td>Координата Х</td>
-                    <td>Координата Y</td>
-                    <td>Радиус R</td>
-                    <td>Попадание</td>
-                    <td>Текущее время</td>
-                    <td>Время исполнения</td>
-
+                    <th width="100px">Попал?</th>
+                    <th>Координата Х</th>
+                    <th>Координата Y</th>
+                    <th>Радиус R</th>
+                    <th>Текущее время</th>
+                    <th>Время запроса</th>
+                    <th>Кто ты.</th>
                 </tr>
             </table>
 
@@ -115,7 +160,6 @@
 
     </tr>
 </table>
-
 
 
 </body>
